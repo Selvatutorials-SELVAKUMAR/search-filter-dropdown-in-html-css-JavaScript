@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <title>Search/Filter Dropdown</title>
+</head>
+<body>
+    <div class="search-component">
+        <h1>Search/Filter Dropdown</h1>
+        <br/>
+        <div class="dropdown-content">
+            <button id="dropdownbtn" onclick="Filterdropdown.toggleClass()">Dropdown Menu <i class="ion-chevron-down" style = 'position : absolute;right: 0;margin-right: 20px;'></i></button>
+           <div class="dropdownlist">
+               <div class="search">
+                   <i class="ion-android-search"></i>
+                   <input type="text" id="textfield" placeholder="Search..." autocomplete="off" onkeyup="Filterdropdown.filterLinks(this.value)">
+               </div>
+               <div id="links" onclick = "Filterdropdown.hideDropdown()">
+
+               </div>
+           </div>
+        </div>
+    </div>
+    <a href="#" class = 'to-top'>
+        <i class = 'ion-chevron-up'></i>
+    </a>
+    <script src="app.js"></script>
+</body>
+</html>
